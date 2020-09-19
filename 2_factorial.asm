@@ -8,10 +8,10 @@ msg: .asciiz "El factorial es "
 main:
 	li	$v0, 4           # print_string code
 	la	$a0, prompt  
-	syscall # puts(prompt);
+	syscall                  # puts(prompt);
 	li	$v0, 5
-	syscall # scanf("%i", &num);
-	move 	$t0, $v0         # int num;
+	syscall                  # scanf("%i", &num);
+	move 	$t0, $v0         # 
 	li      $t1, 1           # result = 1;
 	li	$t2, 1 
 loop:   
